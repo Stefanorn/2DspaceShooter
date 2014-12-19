@@ -84,7 +84,7 @@ GameObject:
   - 4: {fileID: 202635774}
   - 114: {fileID: 202635773}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: playerSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,7 +164,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .0514705777, g: .0514705777, b: .0514705777, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -208,6 +208,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1829623977}
   - 114: {fileID: 1829623976}
+  - 95: {fileID: 1829623978}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -239,3 +240,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!95 &1829623978
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1829623975}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1ed9414a9b91e494a98860d3384f9100, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1

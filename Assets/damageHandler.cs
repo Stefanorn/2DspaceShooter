@@ -9,15 +9,16 @@ public class damageHandler : MonoBehaviour {
 	int correctLayer;
 
 	SpriteRenderer spriteRenderer;
+	Animator animator;
 
 	void Start(){
 		correctLayer = gameObject.layer;
 
-		spriteRenderer = GetComponent<SpriteRenderer>();
-		if (spriteRenderer == null) {
-			spriteRenderer = transform.GetComponentInChildren<SpriteRenderer>();
-			if(spriteRenderer == null){
-				Debug.LogError(gameObject.name + " does not have a sprite Rendere");
+		animator = GetComponent<Animator>();
+		if (animator == null) {
+			animator = transform.GetComponentInChildren<Animator>();
+			if(animator == null){
+				Debug.LogError(gameObject.name + " does not have a sprite Animator");
 			}
 		}
 	}
@@ -27,6 +28,7 @@ public class damageHandler : MonoBehaviour {
 			health--;
 			invuln = 0.5f;
 			gameObject.layer = 10;
+			animator.SetBool("isInvernable", true);
 		}
 		else{
 			health--;
@@ -37,15 +39,8 @@ public class damageHandler : MonoBehaviour {
 		if (invuln > 0) {
 			invuln -= Time.deltaTime;
 			if (invuln <= 0) {
-				gameObject.layer = correctLayer;	
-//				if(spriteRenderer == !null){
-//					spriteRenderer.enabled = true;
-//				}
-//			}
-//			else {
-//				if(spriteRenderer == !null){
-//					spriteRenderer.enabled = !spriteRenderer.enabled;
-//				}
+				gameObject.layer = correctLayer;
+				animator.SetBool("isInvernable", false);
 			}
 		}
 		

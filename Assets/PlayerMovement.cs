@@ -7,10 +7,11 @@ public class PlayerMovement : MonoBehaviour {
 	public float	rotationSpeed = 180f;
 
 	float shipBondaryRadius = 0.5f;
+	Animator animator; 
 
 	// Use this for initialization
 	void Start () {
-	
+		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +35,13 @@ public class PlayerMovement : MonoBehaviour {
 		Vector3 velocity = new Vector3 (0, Input.GetAxis ("Vertical") * maxSpeed * Time.deltaTime ,0);
 
 		pos += rot * velocity;
+
+		if ( Input.GetKey(KeyCode.W) ) {
+						animator.SetBool ("isMoving", true);
+				}
+		else {
+			animator.SetBool ("isMoving", false);
+		}
 
 		// RESTRICT Player to the camera bounderis
 
