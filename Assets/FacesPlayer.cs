@@ -4,6 +4,7 @@ using System.Collections;
 public class FacesPlayer : MonoBehaviour {
 
 	public float rotSpeed = 180f;
+	Vector3 offsetPos = new Vector3 (3, 3, 0);
 
 	Transform player;
 
@@ -24,7 +25,7 @@ public class FacesPlayer : MonoBehaviour {
 			return;		
 		}
 
-		Vector3 dir = player.position - transform.position;
+		Vector3 dir = (player.position - transform.position);
 		dir.Normalize ();
 
 		float zAngle = Mathf.Atan2 (dir.y, dir.x) * Mathf.Rad2Deg - 90;
