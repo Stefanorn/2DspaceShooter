@@ -4,7 +4,6 @@ using System.Collections;
 public class FacesPlayer : MonoBehaviour {
 
 	public float rotSpeed = 180f;
-	Vector3 offsetPos = new Vector3 (3, 3, 0);
 
 	Transform player;
 
