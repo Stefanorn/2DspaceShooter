@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemySpawner : MonoBehaviour 
 {
-	public GameObject enemy;
+	public GameObject[] enemys;
 
 	float spawnDistance = 12f;
 	float enemyRate = 5;
@@ -23,8 +23,8 @@ public class EnemySpawner : MonoBehaviour
 			offset.z = 0;
 			offset = offset.normalized * spawnDistance;
 
-			Instantiate(enemy, transform.position + offset, Quaternion.identity);
+			int enemyPicker = Random.Range(0, enemys.Length);
+			Instantiate(enemys[enemyPicker], transform.position + offset, Quaternion.identity);
 		}
-	
 	}
 }

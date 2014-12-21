@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59525c455da35bb4b92a1e2358dd2e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 2
+  maxSpeed: 1.5
 --- !u!114 &11460276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c121b0ff438b51548996e192429a954d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 3
   canGetInvirnable: 0
 --- !u!212 &21260274
 SpriteRenderer:
