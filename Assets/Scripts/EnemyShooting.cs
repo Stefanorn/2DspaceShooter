@@ -5,6 +5,7 @@ public class EnemyShooting : MonoBehaviour {
 
 	public GameObject bulletPrefab;
 	public float fireDelay = 0.25f;
+	public int range = 4;
 
 	Transform player;
 
@@ -23,8 +24,9 @@ public class EnemyShooting : MonoBehaviour {
 			if (go != null) {
 				player = go.transform;		
 			}
+			Debug.Log("penis");
 		}
-		if(cooldownTimer <= 0 && player != null && Vector3.Distance(transform.position , player.position) < 4) {
+		if(cooldownTimer <= 0 && player != null && Vector3.Distance(transform.position , player.position) < range) {
 			
 			cooldownTimer = fireDelay;
 			

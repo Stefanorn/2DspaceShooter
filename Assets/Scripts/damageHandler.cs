@@ -18,7 +18,7 @@ public class damageHandler : MonoBehaviour {
 		if (animator == null) {
 			animator = transform.GetComponentInChildren<Animator>();
 			if(animator == null){
-				Debug.LogError(gameObject.name + " does not have a sprite Animator");
+				//Debug.LogError(gameObject.name + " does not have a sprite Animator");
 			}
 		}
 	}
