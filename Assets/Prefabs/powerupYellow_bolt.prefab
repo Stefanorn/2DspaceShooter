@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 402556}
   - 212: {fileID: 21202556}
   - 61: {fileID: 6102556}
-  - 114: {fileID: 11402556}
+  - 114: {fileID: 11418458}
   m_Layer: 11
   m_Name: powerupYellow_bolt
   m_TagString: PowerUp
@@ -38,10 +38,10 @@ BoxCollider2D:
   m_GameObject: {fileID: 102556}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: .340000004, y: .330000013}
   m_Center: {x: 0, y: 0}
---- !u!114 &11402556
+--- !u!114 &11418458
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

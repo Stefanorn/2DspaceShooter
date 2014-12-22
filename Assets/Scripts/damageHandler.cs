@@ -11,11 +11,11 @@ public class damageHandler : MonoBehaviour {
 	float invuln = 0;
 	int correctLayer;
 
-
 	SpriteRenderer spriteRenderer;
 	Animator animator;
 
 	void Start(){
+
 		correctLayer = gameObject.layer;
 
 
@@ -34,7 +34,7 @@ public class damageHandler : MonoBehaviour {
 //		}
 
 		if (gameObject.layer != 9 ) {
-						if (col.tag == "ShieldUp") {
+			if (col.tag == "ShieldUp" && shield != null) {
 								GameObject instance = (GameObject)(Instantiate (shield, transform.position, transform.rotation));
 								instance.transform.parent = gameObject.transform;
 								return;
@@ -59,18 +59,20 @@ public class damageHandler : MonoBehaviour {
 	{
 		if (invuln > 0) {
 			invuln -= Time.deltaTime;
-			if (invuln <= 0) {
+			if (invuln <= 0 && canGetInvirnable) {
 				gameObject.layer = correctLayer;
 				animator.SetBool("isInvernable", false);
 			}
 		}
 		
-		if (health <= 0) {
+		if (health <= 0) 
+		{
 			if( items.Length != 0 ){
-					Instantiate(items[Random.Range(0, items.Length-1)],transform.position,Quaternion.identity);
-				Debug.Log("Dropar item");
+				if(Random.Range(0f,100f) <= dropchance){
+					Instantiate(items[Random.Range(0, items.Length)],transform.position,Quaternion.identity);
+				}
 			}
-			Destroy(gameObject);
+		Destroy(gameObject);
 		}
 
 	}

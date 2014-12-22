@@ -7,7 +7,7 @@ public class playerShooting : MonoBehaviour {
 	public float fireDelay = 0.25f;
 
 	float cooldownTimer = 0;
-	int bulletLayer;
+	//int bulletLayer;
 	int bulletIndex = 0;
 
 
@@ -15,7 +15,7 @@ public class playerShooting : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		bulletLayer = gameObject.layer;
+		//bulletLayer = gameObject.layer;
 
 
 	}
@@ -29,8 +29,8 @@ public class playerShooting : MonoBehaviour {
 			 
 			Vector3 offset = transform.rotation * new Vector3(0,0.5f,0);
 
-			GameObject bulletGO = (GameObject)Instantiate(bulletPrefab[bulletIndex], transform.position + offset , transform.rotation);
-			bulletGO.layer = bulletLayer;
+			Instantiate(bulletPrefab[bulletIndex], transform.position + offset , transform.rotation);
+			//bulletGO.layer = bulletLayer;
 			           
 		}
 

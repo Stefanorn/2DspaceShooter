@@ -31,7 +31,7 @@ GameObject:
   - 114: {fileID: 11458980}
   - 114: {fileID: 11430296}
   - 114: {fileID: 11461164}
-  - 114: {fileID: 11430460}
+  - 114: {fileID: 11480110}
   m_Layer: 9
   m_Name: Enemy 5
   m_TagString: Untagged
@@ -113,20 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 195962, guid: 451768b602a1bc14f8ae8a4ba9254a8c, type: 2}
   fireDelay: 2
-  range: 4
---- !u!114 &11430460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e5afab84151c2347bb1aa1a9a5b2c50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: []
-  dropchance: 10
+  range: 15
 --- !u!114 &11458976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -144,7 +131,7 @@ MonoBehaviour:
   items:
   - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
   - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
-  dropchance: 10
+  dropchance: 30
 --- !u!114 &11458978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,6 +168,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
+--- !u!114 &11480110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f848b2d33fc23ac4ca8a797cae2061f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  things:
+  - {fileID: 140612, guid: 3ff295e008798ee4792cbf941ddb4064, type: 2}
+  - {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
 --- !u!212 &21258980
 SpriteRenderer:
   m_ObjectHideFlags: 1

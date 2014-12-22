@@ -63,8 +63,8 @@ GameObject:
   - 114: {fileID: 11452400}
   - 114: {fileID: 11452398}
   - 60: {fileID: 6016330}
-  - 114: {fileID: 11488006}
   - 114: {fileID: 11465844}
+  - 114: {fileID: 11480110}
   m_Layer: 9
   m_Name: Enemy 4
   m_TagString: Untagged
@@ -200,7 +200,7 @@ MonoBehaviour:
   items:
   - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
   - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
-  dropchance: 10
+  dropchance: 30
 --- !u!114 &11465844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
---- !u!114 &11488006
+--- !u!114 &11480110
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -224,7 +224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f848b2d33fc23ac4ca8a797cae2061f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thing: {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
+  things:
+  - {fileID: 140612, guid: 3ff295e008798ee4792cbf941ddb4064, type: 2}
+  - {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
 --- !u!198 &19814286
 ParticleSystem:
   m_ObjectHideFlags: 1

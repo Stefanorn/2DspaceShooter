@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerSpawner : MonoBehaviour {
 
 	public GameObject playerPrefab;
-	public int numLives = 4;
+	public static int numLives = 4;
 
 	GameObject playerInstance;
 
@@ -13,7 +13,6 @@ public class PlayerSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		numLives--;
 		if (numLives > 0) {
 			spawnPlayer ();
 		}
@@ -21,6 +20,7 @@ public class PlayerSpawner : MonoBehaviour {
 	
 	}
 	void spawnPlayer(){
+		numLives--;
 		respawnTimer = 1f;
 		playerInstance = (GameObject)Instantiate (playerPrefab, transform.position, Quaternion.identity);
 	}
@@ -35,8 +35,5 @@ public class PlayerSpawner : MonoBehaviour {
 			}
 		}
 	
-	}
-	void OnGUI(){
-		GUI.Label (new Rect (0, 0, 100, 50), "Lives " + numLives);
 	}
 }

@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11446084}
   - 60: {fileID: 6046088}
   - 95: {fileID: 9509284}
+  - 114: {fileID: 11444820}
   m_Layer: 8
   m_Name: playerShip
   m_TagString: Player
@@ -148,6 +149,20 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11444820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f848b2d33fc23ac4ca8a797cae2061f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  things:
+  - {fileID: 140612, guid: 3ff295e008798ee4792cbf941ddb4064, type: 2}
+  - {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
 --- !u!114 &11446084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c121b0ff438b51548996e192429a954d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 3
   canGetInvirnable: 1
   shield: {fileID: 109142, guid: f5a201727c310404392add42e564c9d0, type: 2}
   items: []

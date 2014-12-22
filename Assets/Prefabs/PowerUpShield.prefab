@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 488536}
   - 212: {fileID: 21288536}
   - 61: {fileID: 6188536}
-  - 114: {fileID: 11488536}
+  - 114: {fileID: 11429122}
   m_Layer: 11
   m_Name: PowerUpShield
   m_TagString: ShieldUp
@@ -41,7 +41,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .340000004, y: .330000013}
   m_Center: {x: 0, y: 0}
---- !u!114 &11488536
+--- !u!114 &11429122
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
