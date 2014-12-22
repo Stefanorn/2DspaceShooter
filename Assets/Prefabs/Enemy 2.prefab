@@ -13,6 +13,8 @@ GameObject:
   - 114: {fileID: 11460278}
   - 114: {fileID: 11460276}
   - 114: {fileID: 11460274}
+  - 114: {fileID: 11448592}
+  - 114: {fileID: 11491360}
   m_Layer: 9
   m_Name: Enemy 2
   m_TagString: Untagged
@@ -100,6 +102,18 @@ PolygonCollider2D:
       - {x: -1.1920929e-05, y: -.42582795}
       - {x: -.193077087, y: -.295503616}
       - {x: -.338318825, y: -.128742591}
+--- !u!114 &11448592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f848b2d33fc23ac4ca8a797cae2061f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thing: {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
 --- !u!114 &11460274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,6 +151,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   canGetInvirnable: 0
+--- !u!114 &11491360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8ec9a1c54f3a34385ba341a0e73b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 10
 --- !u!212 &21260274
 SpriteRenderer:
   m_ObjectHideFlags: 1

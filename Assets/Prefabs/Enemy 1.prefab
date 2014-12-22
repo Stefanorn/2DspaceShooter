@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11406384}
   - 114: {fileID: 11406382}
   - 95: {fileID: 9506382}
+  - 114: {fileID: 11414472}
   m_Layer: 9
   m_Name: Enemy 1
   m_TagString: Untagged
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 152286, guid: 698c12567da971b4b920b471d908467b, type: 2}
-  fireDelay: .100000001
+  fireDelay: .300000012
   range: 10
 --- !u!114 &11406390
 MonoBehaviour:
@@ -182,6 +183,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   canGetInvirnable: 0
+--- !u!114 &11414472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8ec9a1c54f3a34385ba341a0e73b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 10
 --- !u!212 &21206382
 SpriteRenderer:
   m_ObjectHideFlags: 1
