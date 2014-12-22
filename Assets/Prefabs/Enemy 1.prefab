@@ -17,6 +17,7 @@ GameObject:
   - 114: {fileID: 11406382}
   - 95: {fileID: 9506382}
   - 114: {fileID: 11414472}
+  - 114: {fileID: 11430460}
   m_Layer: 9
   m_Name: Enemy 1
   m_TagString: Untagged
@@ -183,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   canGetInvirnable: 0
+  shield: {fileID: 0}
 --- !u!114 &11414472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -195,6 +197,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
+--- !u!114 &11430460
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5afab84151c2347bb1aa1a9a5b2c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
+  - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
+  dropchance: 10
 --- !u!212 &21206382
 SpriteRenderer:
   m_ObjectHideFlags: 1

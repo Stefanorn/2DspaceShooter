@@ -5,14 +5,18 @@ public class damageHandler : MonoBehaviour {
 
 	public int health = 1;
 	public bool canGetInvirnable = false;
+	public GameObject shield = null;
 	float invuln = 0;
 	int correctLayer;
 
 	SpriteRenderer spriteRenderer;
 	Animator animator;
+	ItemDropOnDeath items;
 
 	void Start(){
 		correctLayer = gameObject.layer;
+
+		items = gameObject.GetComponent<ItemDropOnDeath> ();
 
 		animator = GetComponent<Animator>();
 		if (animator == null) {
@@ -23,7 +27,21 @@ public class damageHandler : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D(){ 
+	void OnTriggerEnter2D( Collider2D col){ 
+
+
+		if (gameObject.layer != 9 ) {
+						if (col.tag == "ShieldUp") {
+								GameObject instance = (GameObject)(Instantiate (shield, transform.position, transform.rotation));
+								instance.transform.parent = gameObject.transform;
+								return;
+						}
+
+						if (col.tag == "PowerUp") {
+								return;
+						}
+				}
+
 		if (canGetInvirnable) {
 			health--;
 			invuln = 0.5f;
@@ -45,7 +63,8 @@ public class damageHandler : MonoBehaviour {
 		}
 		
 		if (health <= 0) {
-			Destroy(gameObject);		
+			Destroy(gameObject);
+			items.dead = true;
 		}
 
 	}
