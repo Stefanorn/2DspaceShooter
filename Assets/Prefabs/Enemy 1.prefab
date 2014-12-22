@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4b1f54b7367ae4aa28098362c5b95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 152286, guid: 698c12567da971b4b920b471d908467b, type: 2}
+  bulletPrefab: {fileID: 177386, guid: a149edd59d23ead42afa9bc8c59e62d7, type: 2}
   fireDelay: .300000012
   range: 10
 --- !u!114 &11406390
@@ -187,7 +187,6 @@ MonoBehaviour:
   items:
   - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
   - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
-  - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
   dropchance: 10
 --- !u!114 &11414472
 MonoBehaviour:

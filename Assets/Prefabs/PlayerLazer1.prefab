@@ -14,8 +14,8 @@ GameObject:
   - 114: {fileID: 11452286}
   - 114: {fileID: 11467362}
   - 114: {fileID: 11451050}
-  m_Layer: 8
-  m_Name: laserBlue
+  m_Layer: 12
+  m_Name: PlayerLazer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,6 +83,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   canGetInvirnable: 0
+  shield: {fileID: 0}
+  items: []
+  dropchance: 10
 --- !u!114 &11467362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,7 +118,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d048daf7edb28464583f81b22898d0a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73507f3eee2c5b44b98eafc534ec64ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
