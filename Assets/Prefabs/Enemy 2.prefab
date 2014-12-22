@@ -15,7 +15,6 @@ GameObject:
   - 114: {fileID: 11460274}
   - 114: {fileID: 11448592}
   - 114: {fileID: 11491360}
-  - 114: {fileID: 11430460}
   m_Layer: 9
   m_Name: Enemy 2
   m_TagString: Untagged
@@ -103,21 +102,6 @@ PolygonCollider2D:
       - {x: -1.1920929e-05, y: -.42582795}
       - {x: -.193077087, y: -.295503616}
       - {x: -.338318825, y: -.128742591}
---- !u!114 &11430460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e5afab84151c2347bb1aa1a9a5b2c50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items:
-  - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
-  - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
-  dropchance: 10
 --- !u!114 &11448592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,6 +152,11 @@ MonoBehaviour:
   health: 3
   canGetInvirnable: 0
   shield: {fileID: 0}
+  items:
+  - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
+  - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
+  - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
+  dropchance: 10
 --- !u!114 &11491360
 MonoBehaviour:
   m_ObjectHideFlags: 1
