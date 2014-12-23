@@ -33,6 +33,11 @@ public class PlayerSpawner : MonoBehaviour {
 			if(respawnTimer <= 0){
 				spawnPlayer();	
 			}
+			if (numLives <= 0) {
+				Application.LoadLevel("Level1");
+				numLives = 4;
+			}
+
 		}
 	
 	}

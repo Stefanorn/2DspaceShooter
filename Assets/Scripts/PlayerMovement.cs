@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		pos += rot * velocity;
 
-		if ( Input.GetKey(KeyCode.W) ) {
+		if ( Input.GetKey(KeyCode.W) || Input.GetKey( KeyCode.UpArrow ) ) {
 						animator.SetBool ("isMoving", true);
 				}
 		else {

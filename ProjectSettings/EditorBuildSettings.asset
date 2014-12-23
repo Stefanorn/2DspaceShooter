@@ -6,4 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/2DSpaceShooterScene.unity
+    path: Assets/Levels/1/level1.unity
+  - enabled: 1
+    path: Assets/Levels/2/Level2.unity
+  - enabled: 1
+    path: Assets/Levels/3/Level3.unity

@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 	public GameObject[] enemys;
 
 	float spawnDistance = 12f;
-	float enemyRate = 5;
+	float enemyRate = 4;
 	float nextEnemy = 1;
 
 	// Update is called once per frame
@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
 			nextEnemy = enemyRate;
 			enemyRate *= 0.9f;
 			if(enemyRate < 2){
-				enemyRate = 2;
+				enemyRate = 1f;
 			}
 			Vector3 offset = Random.onUnitSphere;
 			offset.z = 0;

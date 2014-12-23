@@ -47,7 +47,7 @@ public class damageHandler : MonoBehaviour {
 
 		if (canGetInvirnable) {
 			health--;
-			invuln = 0.5f;
+			invuln = 0.7f;
 			gameObject.layer = 10;
 			animator.SetBool("isInvernable", true);
 		}
