@@ -8,7 +8,7 @@ public class Level1EnemySpawner : MonoBehaviour {
 	float spawnDistance = 15f;
 	float enemyRate = 5;
 	float nextEnemy = 1;
-	int enemyCounter = 30;
+	int enemyCounter = 20;
 	public bool stop = false;
 	
 	// Update is called once per frame
@@ -47,7 +47,7 @@ public class Level1EnemySpawner : MonoBehaviour {
 			if(enemyCounter <= 0){
 				Instantiate(enemys[1], transform.position + offset, Quaternion.identity);
 			}
-			if(enemyCounter == -30){
+			if(enemyCounter == -20){
 				EndLevelwave();
 			}
 		}
