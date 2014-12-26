@@ -13,7 +13,7 @@ GameObject:
   - 58: {fileID: 5846076}
   - 114: {fileID: 11446076}
   m_Layer: 0
-  m_Name: Metior
+  m_Name: DummyEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,14 +73,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: a1f54a154c28e94468637fe05eca59e4, type: 3}
-  - {fileID: 21300000, guid: 5b5e4d4acb3d2fe4fb2e91b9e9a8598b, type: 3}
-  - {fileID: 21300000, guid: ba898a3ebbcc6cc4284e8c5a645f5de9, type: 3}
-  - {fileID: 21300000, guid: e40059f11e9c0ca488871ebca57daff3, type: 3}
-  - {fileID: 21300000, guid: 22c5eb8a5c94f4b45b0f2f91fc3aed50, type: 3}
-  - {fileID: 21300000, guid: 813efb8ca96097040827a79083420d2b, type: 3}
-  - {fileID: 21300000, guid: 85dc6bd2f23d93b40ab394bed16146db, type: 3}
+  - {fileID: 21300000, guid: 959d8477e24de814fb6eb508507731c2, type: 3}
+  - {fileID: 21300000, guid: bbf5c18848b4ac043b42bbc62867391c, type: 3}
+  - {fileID: 21300000, guid: 22b31a790d6cfc14ba559d832002afb4, type: 3}
+  - {fileID: 21300000, guid: e638159e494f37c4c8a363ae28559776, type: 3}
+  - {fileID: 21300000, guid: bf1fd80f39cb3084eb2f4eac477cff27, type: 3}
   - {fileID: 21300000, guid: e866dbd35a06a1443b5b7945a074f789, type: 3}
+  - {fileID: 21300000, guid: a1f54a154c28e94468637fe05eca59e4, type: 3}
 --- !u!212 &21246076
 SpriteRenderer:
   m_ObjectHideFlags: 1

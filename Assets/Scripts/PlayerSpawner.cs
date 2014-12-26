@@ -34,7 +34,7 @@ public class PlayerSpawner : MonoBehaviour {
 				spawnPlayer();	
 			}
 			if (numLives <= 0) {
-				Application.LoadLevel("Level1");
+				Application.LoadLevel("MainMenu");
 				ScoreTracker.ResetScore();
 				numLives = 4;
 			}

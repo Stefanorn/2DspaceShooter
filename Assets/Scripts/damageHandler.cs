@@ -86,4 +86,7 @@ public class damageHandler : MonoBehaviour {
 			}
 		}
 	}
+	public void Kill(){
+		health = 0;
+	}
 }
