@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 	public GameObject[] enemys;
 
 	float spawnDistance = 12f;
-	float enemyRate = 4;
+	float enemyRate = 4f;
 	float nextEnemy = 1;
 
 	// Update is called once per frame

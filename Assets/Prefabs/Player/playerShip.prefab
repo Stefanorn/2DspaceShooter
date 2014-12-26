@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab:
-  - {fileID: 152286, guid: 698c12567da971b4b920b471d908467b, type: 2}
+  - {fileID: 175574, guid: be7c2bbd9e881fb488ddbe248a347770, type: 2}
   - {fileID: 137012, guid: f04ba09e60b17a848894b28e07734396, type: 2}
   - {fileID: 185268, guid: f0c5fe7ef8b8b5741bafed3db5c81c1b, type: 2}
   - {fileID: 184346, guid: fbc406684c8498b41ad69e93b55f5154, type: 2}
