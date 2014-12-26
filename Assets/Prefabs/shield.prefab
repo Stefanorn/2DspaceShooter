@@ -15,7 +15,7 @@ GameObject:
   - 50: {fileID: 5009142}
   - 82: {fileID: 8213222}
   - 114: {fileID: 11457830}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}

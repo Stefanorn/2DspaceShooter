@@ -5,6 +5,8 @@ public class playerShooting : MonoBehaviour {
 
 	public GameObject[] bulletPrefab;
 	public float fireDelay = 0.25f;
+	public float bulletIndexAmo = 75.0f;
+	public float bIT;
 
 	float cooldownTimer = 0;
 	//int bulletLayer;
@@ -16,7 +18,7 @@ public class playerShooting : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//bulletLayer = gameObject.layer;
-
+		bIT = bulletIndexAmo;
 
 	}
 	
@@ -31,6 +33,16 @@ public class playerShooting : MonoBehaviour {
 
 			Instantiate(bulletPrefab[bulletIndex], transform.position + offset , transform.rotation);
 			//bulletGO.layer = bulletLayer;
+
+			if(bulletIndex >= 1){
+				if(bulletIndexAmo <= 0){
+					bulletIndex--;
+					bulletIndexAmo = bIT;
+				}
+				Debug.Log(bulletIndexAmo); 
+				bulletIndexAmo -= 1;
+
+			}
 			           
 		}
 

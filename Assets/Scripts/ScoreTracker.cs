@@ -13,10 +13,12 @@ public class ScoreTracker : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		scoreTracker = 0;
 		textBox = GetComponent <Text> ();
 		highScore = PlayerPrefs.GetInt ("highScore", 0);
 	
+	}
+	static public void ResetScore(){
+		scoreTracker = 0;
 	}
 	static public void AddPoint(int points)
 	{
