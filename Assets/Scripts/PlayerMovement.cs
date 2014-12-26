@@ -32,9 +32,12 @@ public class PlayerMovement : MonoBehaviour {
 
 		//ser um að fara afram
 		Vector3 pos = transform.position;
-		Vector3 velocity = new Vector3 (0, Input.GetAxis ("Vertical") * maxSpeed * Time.deltaTime ,0);
+		Vector3 velocity = new Vector3 (Input.GetAxis("Strafing") * maxSpeed * Time.deltaTime, Input.GetAxis ("Vertical") * maxSpeed * Time.deltaTime ,0);
+
 
 		pos += rot * velocity;
+
+
 
 		if ( Input.GetKey(KeyCode.W) || Input.GetKey( KeyCode.UpArrow ) ) {
 						animator.SetBool ("isMoving", true);
