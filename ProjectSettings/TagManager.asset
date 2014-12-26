@@ -5,6 +5,8 @@ TagManager:
   tags:
   - PowerUp
   - ShieldUp
+  - MissileUp
+  - 
   - enemy
   - 
   Builtin Layer 0: Default

@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class SetInActiveOnUserInput : MonoBehaviour {
-	float time = 1f;
-	public bool onlyOnce = true;
+	float time = 0.5f;
+	bool onlyOnce = true;
 
 	void Start(){
 		if (PlayerPrefs.GetInt ("FirstTime") == 1) {

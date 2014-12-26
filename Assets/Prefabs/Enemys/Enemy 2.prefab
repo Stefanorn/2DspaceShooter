@@ -142,6 +142,7 @@ MonoBehaviour:
   items:
   - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
   - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
+  - {fileID: 145154, guid: bb6c7be21aa93284392395ee3b5dfc53, type: 2}
   dropchance: 30
   deathGameObjects:
   - {fileID: 140612, guid: 3ff295e008798ee4792cbf941ddb4064, type: 2}
