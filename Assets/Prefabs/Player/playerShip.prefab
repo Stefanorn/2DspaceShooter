@@ -226,6 +226,8 @@ MonoBehaviour:
   - {fileID: 184346, guid: fbc406684c8498b41ad69e93b55f5154, type: 2}
   - {fileID: 169094, guid: b26fc73c090212b42bad126a281c7dbf, type: 2}
   fireDelay: .100000001
+  bulletIndexAmo: 75
+  bIT: 0
 --- !u!114 &11446086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -242,6 +244,7 @@ MonoBehaviour:
   shield: {fileID: 109142, guid: f5a201727c310404392add42e564c9d0, type: 2}
   items: []
   dropchance: 10
+  deathGameObjects: []
 --- !u!114 &11446088
 MonoBehaviour:
   m_ObjectHideFlags: 1

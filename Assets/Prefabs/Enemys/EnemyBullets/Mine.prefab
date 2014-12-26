@@ -71,6 +71,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   canGetInvirnable: 0
+  shield: {fileID: 0}
+  items: []
+  dropchance: 10
+  deathGameObjects: []
 --- !u!114 &11495962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f848b2d33fc23ac4ca8a797cae2061f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thing: {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
+  things: []
 --- !u!212 &21295962
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InstaniateOnDestroy : MonoBehaviour 
+public class InstaniateOnCollsion : MonoBehaviour 
 {
 	public GameObject[] things;
 

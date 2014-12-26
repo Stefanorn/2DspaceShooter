@@ -201,6 +201,7 @@ MonoBehaviour:
   - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
   - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
   dropchance: 30
+  deathGameObjects: []
 --- !u!114 &11465844
 MonoBehaviour:
   m_ObjectHideFlags: 1

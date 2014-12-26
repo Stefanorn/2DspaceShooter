@@ -8,6 +8,7 @@ public class damageHandler : MonoBehaviour {
 	public GameObject shield = null;
 	public GameObject[] items;
 	public float dropchance = 10.0f;
+	public GameObject[] deathGameObjects;
 	float invuln = 0;
 	int correctLayer;
 
@@ -73,7 +74,16 @@ public class damageHandler : MonoBehaviour {
 				}
 			}
 		Destroy(gameObject);
+		InstasiateOnDestroy();
 		}
 
+	}
+	void InstasiateOnDestroy()
+	{
+		if (deathGameObjects != null) {
+			foreach (GameObject thing in deathGameObjects) {
+				Instantiate (thing, transform.position, Quaternion.identity);
+			}
+		}
 	}
 }
