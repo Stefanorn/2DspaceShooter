@@ -31,7 +31,6 @@ GameObject:
   - 60: {fileID: 6042854}
   - 50: {fileID: 5042854}
   - 114: {fileID: 11434250}
-  - 114: {fileID: 11480110}
   m_Layer: 9
   m_Name: Enemy 3
   m_TagString: enemy
@@ -155,7 +154,9 @@ MonoBehaviour:
   - {fileID: 188536, guid: e12221c9a6caf22449e18482e5916b9f, type: 2}
   - {fileID: 102556, guid: 49d6561c80c1bb34291643bdce0e4b43, type: 2}
   dropchance: 30
-  deathGameObjects: []
+  deathGameObjects:
+  - {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
+  - {fileID: 140612, guid: 3ff295e008798ee4792cbf941ddb4064, type: 2}
 --- !u!114 &11442854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,20 +171,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 177386, guid: a149edd59d23ead42afa9bc8c59e62d7, type: 2}
   fireDelay: .25
   range: 4
---- !u!114 &11480110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f848b2d33fc23ac4ca8a797cae2061f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  things:
-  - {fileID: 140612, guid: 3ff295e008798ee4792cbf941ddb4064, type: 2}
-  - {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
 --- !u!212 &21242854
 SpriteRenderer:
   m_ObjectHideFlags: 1
