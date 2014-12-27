@@ -41,7 +41,7 @@ public class damageHandler : MonoBehaviour {
 								return;
 						}
 
-						if (col.tag == "PowerUp") {
+				if (col.tag == "PowerUp" || col.tag == "MissileUp") {
 								return;
 						}
 				}

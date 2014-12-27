@@ -47,7 +47,6 @@ public class playerShooting : MonoBehaviour {
 					bulletIndex--;
 					bulletIndexAmo = bIT;
 				}
-				Debug.Log(bulletIndexAmo); 
 				bulletIndexAmo -= 1;
 
 			}

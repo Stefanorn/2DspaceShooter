@@ -23,9 +23,6 @@ public class FacesEnemy : MonoBehaviour {
 				}
 			}
 		}
-				
-		Debug.Log (target );
-
 		if (target != null) {
 						Vector3 dir = (target.transform.position - transform.position);
 						dir.Normalize ();
