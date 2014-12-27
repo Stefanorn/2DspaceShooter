@@ -17,7 +17,7 @@ public class Level1EnemySpawner : MonoBehaviour {
 		if (stop) {
 			GameObject[] enemysLeft = GameObject.FindGameObjectsWithTag("enemy");
 			int isGameOver = 0;
-			foreach(GameObject enemyleft in enemysLeft){
+			foreach(GameObject i in enemysLeft){
 				isGameOver++;
 			}
 				if(isGameOver == 0){

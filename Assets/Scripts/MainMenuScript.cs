@@ -25,4 +25,8 @@ public class MainMenuScript : MonoBehaviour {
 		Application.Quit();
 
 	}
+	public void ResetThisLevel(){
+		PlayerPrefs.SetInt ("FirstTime", 0);
+		Application.LoadLevel (Application.loadedLevel);
+	}
 }

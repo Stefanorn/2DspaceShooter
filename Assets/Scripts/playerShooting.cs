@@ -59,7 +59,8 @@ public class playerShooting : MonoBehaviour {
 	}
 	void OnTriggerEnter2D (Collider2D col){
 		if (col.tag == "PowerUp" && bulletIndex < bulletPrefab.Length - 1) {
-			bulletIndex++;		
+			bulletIndex++;
+			bulletIndexAmo = bIT;
 		}
 		if (col.tag == "MissileUp") {
 			missilAmmo += 20;		

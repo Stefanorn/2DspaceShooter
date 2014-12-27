@@ -3289,6 +3289,8 @@ MonoBehaviour:
   - {fileID: 185268, guid: f0c5fe7ef8b8b5741bafed3db5c81c1b, type: 2}
   - {fileID: 184346, guid: fbc406684c8498b41ad69e93b55f5154, type: 2}
   - {fileID: 169094, guid: b26fc73c090212b42bad126a281c7dbf, type: 2}
+  hotkey1: {fileID: 175574, guid: be7c2bbd9e881fb488ddbe248a347770, type: 2}
+  hotkey2: {fileID: 0}
   fireDelay: .100000001
   bulletIndexAmo: 75
   bIT: 0
@@ -3310,7 +3312,7 @@ MonoBehaviour:
   items: []
   dropchance: 10
   deathGameObjects:
-  - {fileID: 137042, guid: 6dc709f244754854b9b8412ac16f1a36, type: 2}
+  - {fileID: 100000, guid: 4c5a17ca1f9fec84e941441ebb8be079, type: 2}
   - {fileID: 140612, guid: 3ff295e008798ee4792cbf941ddb4064, type: 2}
 --- !u!50 &1306726887
 Rigidbody2D:
@@ -3752,6 +3754,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1591383220}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1800970171}
+        m_MethodName: ResetThisLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
