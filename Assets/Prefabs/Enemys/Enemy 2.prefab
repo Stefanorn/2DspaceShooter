@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c121b0ff438b51548996e192429a954d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
   canGetInvirnable: 0
   shield: {fileID: 0}
   items:
