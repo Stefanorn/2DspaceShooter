@@ -17,7 +17,6 @@ public class ScoreTracker : MonoBehaviour {
 
 		for (int i = 0; i < highScore.Length; i++) {
 			highScore[i] = PlayerPrefs.GetInt("highScoreNr" + i);
-			Debug.Log(i.ToString() + " = " + PlayerPrefs.GetInt("highScoreNr" + i));	
 		}
 			
 	}
