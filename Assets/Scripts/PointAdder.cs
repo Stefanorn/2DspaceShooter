@@ -6,8 +6,10 @@ public class PointAdder : MonoBehaviour {
 	public int points = 10; 
 	
 	// Update is called once per frame
-	void OnTriggerEnter2D () 
+	void OnTriggerEnter2D (Collider2D col) 
 	{
-		ScoreTracker.AddPoint (points);
+		if(col.gameObject.layer == 12)
+				ScoreTracker.AddPoint (points);
+
 	}
 }
