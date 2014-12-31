@@ -71,7 +71,7 @@ public class EnemySpawningSystem : MonoBehaviour {
 			enemyPicker = Random.Range (0, enemys.Length);
 			Debug.Log(enemyPicker);
 		}
-		for(float f = 0; f < 50 ;f++ ){
+		for(float f = 0; f < 30 ;f++ ){
 			spawnLocation.x = xValue;
 			Instantiate(enemys[enemyPicker], spawnLocation, Quaternion.Euler(0,0,180));
 			Debug.Log(spawnLocation);

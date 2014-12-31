@@ -253,7 +253,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 804023020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 15, z: 0}
+  m_LocalPosition: {x: -14.04, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -507,7 +507,7 @@ MonoBehaviour:
   - {fileID: 152400, guid: dee1bb3b1e32bb240961b1b65baf4815, type: 2}
   - {fileID: 158980, guid: 24ad4746dc43c0a4abb11438d1f31fc9, type: 2}
   boss: {fileID: 149096, guid: 96d089dbd0307c04db513d2f04121224, type: 2}
-  courutinesCounter: 0
+  courutinesCounter: 5
   spawnRate: .300000012
   offset: 2
 --- !u!1 &1503704714
